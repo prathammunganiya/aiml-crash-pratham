@@ -17,8 +17,6 @@ if importlib.util.find_spec("groq") is not None:
 else:
     raise ImportError("groq package is not installed. Install it with pip install groq")
 
-GEMINI_API_KEY= "AQ.Ab8RN6L5iU221Qk_9-ppD05cHf24wodYIFm-v9D03wu0HOYI9A"
-
 
 genai.configure(api_key="GEMINI_KEY")
 groq_client = Groq(api_key="GROQ_KEY")
